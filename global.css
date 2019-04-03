@@ -1,0 +1,32 @@
+.container {
+    margin: 0 auto;
+    max-width: 900px;  
+    padding: 0 30px;
+}
+
+body {
+    background-color: rgb(187, 217, 228);
+}
+
+.insights {
+    display: flex; 
+    
+}
+
+h1 {
+    font-family: "Poiret One";
+}
+
+h2 {
+    font-family: "Roboto";
+    font-weight: light; 
+}
+
+h3 {
+    display: block; 
+    font-family: "Roboto";
+}
+
+p {
+    font-family: "Roboto" 
+}
