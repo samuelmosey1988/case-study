@@ -4,7 +4,13 @@
     max-width: 900px;  
     padding: 0 30px;
 }
-
+body > * {
+    box-sizing: border-box;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+}
 body {
     background-color: rgb(187, 217, 228);
     font-family: "Roboto";
@@ -35,29 +41,34 @@ img.float-left{
 img.float-right{ 
     margin-left: .5rem; 
     margin-bottom: .5rem; 
-}
-.insights img {
-    max-width: 150px;
-}
+} 
 .insight {
     display: flex;
+    flex-direction: column;
     margin-bottom: 60px;
 }
 .insight .img-wrapper {
     padding-right: 30px;
     flex: 1;
 }
+.insight img {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+}  
 .insights .content-wrapper {
     flex: 3;
 }
 .flows {
     display: flex;
+    flex-direction: column;
 }
 .flows .img-wrapper {
     padding: 0 5px;
 }
 .port-imgs {
     display: flex;
+    flex-direction: column;
 }
 .port-imgs .img-wrapper {
     padding: 0 5px;
@@ -88,6 +99,8 @@ img.float-right{
 }
 .hero nav ul {
     display: flex; 
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between; 
     flex-wrap: wrap;   
     list-style: none; 
@@ -107,12 +120,14 @@ img.float-right{
 .next-steps-container > div {
     flex-grow: 0;   
 }
+footer {
+    margin-bottom: 60px;
+}
 .newsletter-signup {
     background: #000952; 
     color: white; 
     display: flex; 
-    width: 100%; 
-    position: fixed; 
+    width: 100%;
     bottom: 0; 
     left: 0; 
     padding: 1rem; 
@@ -121,14 +136,50 @@ img.float-right{
 }
 .newsletter-signup-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .newsletter-signup-content button {
     background: rgb(187, 217, 228);
-    height: 20px;
+    height: 26px;
     margin-left: .5rem;  
+    align-self: flex-end;
 }
 .newsletter-signup input[type="text"]{
     margin-left: .5rem; 
     height: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+@media (min-width: 650px) {
+    .insight {
+        flex-direction: row;
+    }
+    .flows {
+        flex-direction: row;
+    }
+    .port-imgs {
+        flex-direction: row;
+    }
+    footer {
+        margin-bottom: 120px;
+    }
+    .newsletter-signup {
+        position: fixed; 
+    }
+    .newsletter-signup-content {
+        flex-direction: row;
+    }
+    .newsletter-signup input[type="text"]{
+        margin-bottom: 0;
+        max-width: 125px;
+    }
+    .newsletter-signup-content button {
+        align-self: center; 
+    }
+}
+@media (min-width: 780px) {
+    .hero nav ul {
+        flex-direction: row; 
+    }
 }
