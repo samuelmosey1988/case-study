@@ -1,259 +1,247 @@
 <!DOCTYPE html>
-<html>
 <head>
-        <title>GoMuse Case Study</title>
-        <link rel="stylesheet" type="text/css" href="global.css">
+    <title>GoMuse Case Study</title>
+    <link rel="stylesheet" type="text/css" href="global.css">
 </head>
 
 <body>
-        <div class="wrapper">
-                <div class="container">
-                        <div class="section intro">
-                                <h1 id="top">GoMuse</h1>
-                        </div>  
-        <h2>A UX Case Study</h2>
-        
-                <div class="section contents">
-                        <a href="https://kenzie.academy">Kenzie Academy</a>
-                                <ul>
-                                        <li><a href="#insights">Insights</a></li>
-                                        <li><a href="#personas">Personas</a></li>
-                                        <li><a href="#inspiration">Inspiration</a></li>
-                                        <li><a href="#fonts">Fonts</a></li>
-                                        <li><a href="#colors">Colors</a></li>
-                                        <li><a href="#key-feature">Key Feature</a></li>
-                                        <li><a href="#user-flow">User Flow</a></li>
-                                        <li><a href="#next-steps">Next Steps</a></li>
-                                        <li><a href="#conclusion">Conclusion</a></li>
-                                </ul>
-                </div>
-
-        <h3>Find new musicians to play with in your area easily!</h3>
-
-                <p>
-                Musicians need social media to market their brand, 
-                but why are there no social media platforms for Musicians? 
+    <header class="hero">
+        <div class="hero-title text-center">
+            <h1 id="top">GoMuse</h1>
+            <h2>A UX Case Study</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="button" href="#insights">Insights</a></li>
+                <li><a class="button" href="#personas">Personas</a></li>
+                <li><a class="button" href="#inspiration">Inspiration</a></li>
+                <li><a class="button" href="#fonts">Fonts</a></li>
+                <li><a class="button" href="#colors">Colors</a></li>
+                <li><a class="button" href="#key-feature">Key Feature</a></li>
+                <li><a class="button" href="#user-flow">User Flow</a></li>
+                <li><a class="button" href="#next-steps">Next Steps</a></li>
+                <li><a class="button" href="#conclusion">Conclusion</a></li>
+            </ul>
+        </nav>
+        <div class="content-wrapper container text-center hero-info">
+            <h3>Find new musicians to play with in your area easily!</h3>
+            <div class="content-wrapper">
+                <p> 
+                    Musicians need social media to market their brand, but why are there no social media platform for musicians?
                 </p>
+                <p>
+                    How might we set up musicians for success before they even reach the practice room?
+                </p>
+            </div>
+    </header>
+           
+    <section class="insights container">
+        <h3>Insights</h3>
+        <div class="insight">
+            <div class="img-wrapper">
+                <img src="images/joshua-pic.png" height=100px alt="Joshua profile picture" />
+            </div>
+            <div class="content-wrapper">
+                <p>
+                    "Finding people that are aware of musicality, dynamic, and texture in their playing is difficult because there's no way to vet those things before trying the potential member out. This creates a lot of room for wasted time."
+                </p>
+                <p>
+                    - Joshua Powell
+                </p>
+            </div>
+        </div>
+    
+        <div class="insight">
+            <div class="img-wrapper">
+                <img src="images/jonny-pic.png" height=100px alt="Jonny profile picture" />
+            </div>
+            <div class="content-wrapper">
+            <p>
+                "There's an intrinsic barrier to most, if not all, exisiting social media platforms in the sense that direct media interaction is impossible, or really clunky. Finding music on apps like Facebook is exceedingly difficult due to the amount of page layers you have to go through before you get there."
+            </p>
+            <p>
+                - Jonny Carroll
+            </p>
+            </div>
+        </div>
+            <div class="insight">
+                <div class="img-wrapper">
+                    <img src="images/luke-pic.png" height=100px alt="Luke profile picture" />
+                </div>
+                <div class="content-wrapper">
+                <p>
+                    "I've never felt comfortable reaching out on existing social media platforms in terms of finding people for music projects. There's no way to get a good feel all in one place for the potential person's style, and temperament."
+                </p>
+                <p>
+                    - Luke Van Tress
+                </p>
+                </div>
+            </div>
+            <div class="insight">
+                <div class="img-wrapper">
+                    <img src="images/jacquie-pic.png" height="100px" alt="Jacquie profile picture" />
+                </div>
+                <p>
+                    "I wish there was a safe space where I could receive constructive criticism with no judgement. If there was an artist-centric social media, people would get in the feedback headspace naturally because they'll crave it for themselves to keep improving."
+                </p>    
+                <p>
+                    - Jacquie Jean
+                </p>
+            </div>
+        </section> 
         
+        <section class="personas container">     
+            <h3>Personas</h3>            
+                <div class="content-wrapper">
+                    <div class="persona">
+                        <img src="images/duke.png" height="300px" alt="Persona 1" />
+                            <p>
+                                It doesn't matter how experienced, or old you are. Finding bandmates can be challenging.<br>
+                            </p>
+                    </div>  
+                    <div class="persona">
+                        <img src="images/adam.png" height="300px" alt="Persona 2" />
+                            <p>
+                                Duke is a professional, and Adam is a beginner. Both are facing difficulties finding people to play with.
+                            </p>
+                    </div>
+                </div>
+        </section>
+
+        <section class="jmap container">
+            <h3>Journey Map and Storyboard</h3>
+                <div class="content-wrapper">
+                    <div class="jmap">
                         <p>
-                        <em>How might we set up musicians for success before<br>
-                        they even reach the practice room?</em>
+                            This is often what it takes to find one band member.
                         </p>
-                </div>
-        </div>
-        
-        <div class="container">
-                <div class="section insights">
-                        <h3><strong>Insights</strong></h3>
-                                <div class="section joshua">
-                                <div>
-                                        <img src="images/joshua-pic.png" height=100px alt="Joshua profile picture"/>
-                                </div>
-
-                                        <p>"Finding people that are aware of musicality, dynamic,<br>
-                                                and texture in their playing is difficult because<br>
-                                                there's no way to vet those things before trying<br>
-                                                the potential member out. This creates a lot of<br>
-                                                for wasted time."<br>
-                                                        <br> 
-                                                                - <strong>Joshua Powell</strong>
-                                                        <br>
-                                        </p>
-                                </div>        
-                                <div class="section jonny">
-                                <div>
-                                        <img src="images/jonny-pic.png" height=100px alt="Jonny profile picture"/>
-                                </div>
-
-                                        <p>"There's an intrinsic barrier to most, if not all,<br>
-                                                exisiting social media platforms in the sense that<br>
-                                                direct media interaction is impossible, or really<br>
-                                                clunky. Finding music on apps like Facebook is<br>
-                                                exceedingly difficult due to the amount of page<br>
-                                                layers you have to go through before you get there."<br>
-                                                        <br>
-                                                                - <strong>Jonny Carroll</strong>
-                                                        <br>
-                                </p>
-                                </div>
-                                <div class="section luke">
-                                <p>
-
-                                        <img src="images/luke-pic.png" height=100px alt="Luke profile picture"/>
-                                </p>
-
-                                        <p><em>"I've never felt comfortable reaching out on existing<br>
-                                        social media platforms in terms of finding people for<br>
-                                        music projects. There's no way to get a good feel all in<br>
-                                        one place for the potential person's style, and temperament."<br>
-                                                <br>
-                                                        - <strong>Luke Van Tress</strong></em>
-                                                <br>
-                                        </p>
-                                </div>  
-                                <div class="section jacquie">
-                                <p>
-                                        <img src="images/jacquie-pic.png" height="100px" alt="Jacquie profile picture"/>
-                                </p>
-
-                                <p><em>"I wish there was a safe space where I could receive constructive<br>
-                                        criticism with no judgement. If there was an artist-centric<br>
-                                        social media, people would get in the feedback headspace naturally<br>
-                                        because they'll crave it for themselves to keep improving."<br>
-                                        </em>
-                                        <p>
-                                                - <em><strong>Jacquie Jean</strong></em>
-                                
-                                        </p>
-                                        
-                                </div>                    
-                                                
-                </div>
-        </div>
-
-        <div class="container">
-                <div class="section personas">
-                        <h3><strong>Personas</strong></h3>
-                                <p>
-                                        It doesn't matter how experienced, or old you are. Finding bandmates can be challenging.<br>
-                                </p>
-
-                                <p>
-                                        <img src="images/persona-1.png" height="300px" alt="Persona 1"/>
-                                        <img src="images/persona-2.png" height="300px" alt="Persona 2"/>
-                                </p>
-
-                                <p>Duke is a professional, and Adam is a beginner.<br>
-                                Both are facing difficulties finding people to play with.<br>
-                                </p>
-
-                 </div>
-        </div>
-
-
-        <div class="container">
-                <div class="section jmap-storyboard">
-                        <h3><strong>Journey Map and Storyboard</strong></h3>
-                                <p>
-                                This is often what it takes to find <strong>one</strong> band member.
-                                </p>
-                                        <img src="images/gomuse-jm.png" height="300px" alt="Journey Map"/>
-
-                                <p>
-                                It's never fun, and it could be <em>so much easier.</em>
-                                </p>
-
-                                <p>
-                                        <img src="images/storyboard.png" height="300px" alt="Storyboard"/>
-                                </p>
-                </div>
-        </div>
-
-
-        <div class="container">
-                <div class="section inspiration">
-                        <h3><strong>Inspiration</strong></h3>
-                                        <img src="images/Inspiration1.jpg" height="300px" alt="Club Show"/>
-
-                                <p>Anyone interested in playing music wants the chance to play a big stage.<br>
-                                We can help you assemble your crew to get there.<br> 
-                                </p>
-                </div>
-        </div>
-
-        <div class="container">
-                <div class="sections fonts">
-                        <h3><strong>Fonts</strong></h3>        
-                                <p>Poiret One</p>
-                                        <p>
-                                        <strong>Font Weights: </strong>
-                                        Only one weight for this font.
-                                        </p>
-                                <p>Roboto</p>
-                                        <p>
-                                        <strong>Font Weights:</strong></p>
-                                        <p>Light<br>
-                                        <em>Light Italic</em><br> 
-                                        Regular<br> 
-                                        Medium<br> 
-                                        <strong>Bold</strong><br>
-                                </p>
-                </div>               
-        </div>
-
-        <div class="container">
-                <div class="section colors">
-                        <h3><strong>Colors</strong></h3>
+                            <img src="images/gomuse-jm.png" height="300px" alt="Journey Map" />
+                    </div>
+                    <div class="jmap">
                         <p>
-                        <img src="images/colors.png" height="100%" alt="Color Wheel"/>
+                            It's never fun, and it could be so much easier.
                         </p>
-                </div>        
+                            <img src="images/storyboard.png" height="300px" alt="Storyboard" />
+                    </div>
+                </div>
+        </section>
+
+
+        <section class="inspiration container">
+            <h3>Inspiration</h3>
+            <div class="content-wrapper">   
+                <div class="inspiration">   
+                    <img src="images/Inspiration1.jpg" height="300px" alt="Club Show" />
+                    <p>
+                        Anyone interested in playing music wants the chance to play a big stage. We can help you assemble your crew to get there.
+                    </p>
+                </div>
+            </div>     
+        </section>
+
+        <div class="container">
+            <div class="sections fonts">
+                <h3>Fonts</h3>
+                <p>Poiret One</p>
+                <p>
+                    Font Weights: 
+                    Only one weight for this font.
+                </p>
+                <p>Roboto</p>
+                <p>
+                    Font Weights:
+                </p>
+                <p>
+                    Light
+                    Light Italic
+                    Regular
+                    Medium
+                    Bold
+                </p>
+            </div>
         </div>
 
         <div class="container">
-                <div class="section key-feature">
-                        <h3><strong>Key Feature</strong></h3>
-                                <p>Search Immediately, And Speficially<br>
-                                Infinite instrument Scroll And Quick Search
-                                <br>
-                                        <img src="images/infinite-search.png" height="150px" alt="Quick Search"/>
-                                </p>
-                </div> 
-        </div>               
+            <div class="section colors">
+                <h3>Colors</h3>
+                <p>
+                    <img src="images/colors.png" height="100%" alt="Color Wheel" />
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section key-feature">
+                <h3>Key Feature</h3>
+                <p>Search Immediately, And Speficially
+                    Infinite instrument Scroll And Quick Search
+                    
+                    <img src="images/infinite-search.png" height="150px" alt="Quick Search" />
+                </p>
+            </div>
+        </div>
         <br>
 
         <div class="container">
-                <div class="section user-flow">        
-                        <h3><strong>User Flow</strong></h3>
-                                <p>
-                                        <img src="images/user-flow-2.png" height="100%" alt="User Portfolio"/>
-                                        <img src="images/user-flow-1.png" height="100%" alt="User Gear"/>
-                                        <img src="images/user-flow-3.png" height="100%" alt="User Messages"/>
-                                </p>       
-                                        <p>
-                                                Navigate quickly and figure out the best fit for your project!<br>
-                                                Link to Google Drive, Dropbox, Youtube, and access local files to add to your profile.<br>
-                                                <img src=images/edit-portfolio-1.png height=100% alt="Edit Portfolio 1"/>
-                                                <img src=images/edit-portfolio-2.png height=100% alt="Edit Portfolio 2"/> 
-                                                <img src=images/edit-portfolio-3.png height=100% alt="Edit Portfolio 3"/>
-                                        </p>
-                </div>         
-        </div>       
-        <br>
+            <div class="section user-flow">
+                <h3>User Flow</h3>
+                <p>
+                    <img src="images/user-flow-2.png" height="100%" alt="User Portfolio" />
+                    <img src="images/user-flow-1.png" height="100%" alt="User Gear" />
+                    <img src="images/user-flow-3.png" height="100%" alt="User Messages" />
+                </p>
+                <p>
+                    Navigate quickly and figure out the best fit for your project!<br>
+                    Link to Google Drive, Dropbox, Youtube, and access local files to add to your profile.<br>
+                    <img src=images/edit-portfolio-1.png height=100% alt="Edit Portfolio 1" />
+                    <img src=images/edit-portfolio-2.png height=100% alt="Edit Portfolio 2" />
+                    <img src=images/edit-portfolio-3.png height=100% alt="Edit Portfolio 3" />
+                </p>
+            </div>
+        </div>
+       
         <div class="container">
-                <div class="section next-steps">
-                        <h3><strong>Next Steps</strong></h3>
-                        <p>
-                                Add more instruments to choose from for your primary.<br>
-                                Continue iterating on best possible upload platform.<br>
-                                Find a way to easily edit in profile.<br> 
-                        </p>
-                                <p>Continue refining app design.<br>
-                                   Find ways to continue expanding the search function to find best results every time.<br> 
-                                </p>
-                        <br>
-                </div>
+            <div class="section next-steps">
+                <h3>Next Steps</h3>
+                <ul class="next-steps-container">    
+                    <li>
+                        Add more instruments to choose from for your primary.
+                    </li> 
+                    <li>
+                        Continue iterating on best possible upload platform.
+                    </li>   
+                    <li>
+                        Find a way to easily edit in profile.
+                    </li>
+                    <li>
+                        Continue refining app design. 
+                    </li>  
+                    <li>
+                        Find ways to continue expanding the search function to find best results every time.
+                    </li>    
+                </ul>
+            </div>
         </div>
 
         <div class="container">
-                <div class="section conclusion">
-                        <h3><strong>Conclusion</strong></h3>
-                                <p>
-                                        It was enjoyable to create an app that helps locate musicians because this is a situation<br>
-                                        I've personally encountered on several occasions being a musician myself.<br>
-                                        Because of the experiences I've had, I was able to create something easy to use,<br>
-                                        sleek, and quick that adheres to my knowledge of User Experience Design.<br>
-                                        When stuck on a problem, I resorted to storyboarding, discovery interviews, and user testing.<br>  
-                                </p>
-
-                                <p>Through my studies, I created a solution to the long living problem of finding other musicians<br>
-                                to play with. Every iteration has created a stronger product, and every iteration after will<br>
-                                continue to strengthen the app.<br>
-                                </p>
-                        </div>        
-                </div>
+            <div class="section conclusion">
+                <h3>Conclusion</h3>
+                <p>
+                    It was enjoyable to create an app that helps locate musicians because this is a situation I've personally encountered on several occasions being a musician myself. Because of the experiences I've had, I was able to create something easy to use, sleek, and quick that adheres to my knowledge of User Experience Design. When stuck on a problem, I resorted to storyboarding, discovery interviews, and user testing.
+                </p>
+                <img src="images/sho-photo.png" height="100px" alt="show photo" class="float-right" />
+                <p>
+                    Through my studies, I created a solution to the long living problem of finding other musicians to play with. Every iteration has created a stronger product, and every iteration after will continue to strengthen the app.
+                </p>
+            </div>
+        </div>
         <br>
-
+        <a href="https://kenzie.academy">Kenzie Academy</a>
         <a href="#top">Back To Top</a>
-
+        <div class="newsletter-signup">
+            <div class="newsletter-signup-content">
+                Sign up for my dope ass newsletter!
+                <input type="text" name="email" placeholder="Email">
+            </div>
+        </div>
 </body>

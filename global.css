@@ -1,3 +1,4 @@
+/* Base Syles */
 .container {
     margin: 0 auto;
     max-width: 900px;  
@@ -6,27 +7,91 @@
 
 body {
     background-color: rgb(187, 217, 228);
+    font-family: "Roboto";
 }
-
-.insights {
-    display: flex; 
-    
-}
-
 h1 {
     font-family: "Poiret One";
 }
 
 h2 {
-    font-family: "Roboto";
     font-weight: light; 
 }
-
-h3 {
-    display: block; 
-    font-family: "Roboto";
+.text-center {
+    text-align: center; 
 }
+.float-left {
+    float: left; 
+}
+img.float-left{ 
+    margin-right: .5rem; 
+    margin-bottom: .5rem; 
+}
+.float-right {
+    float: right; 
+}
+img.float-right{ 
+    margin-left: .5rem; 
+    margin-bottom: .5rem; 
+}
+/* Components */
+.button {
+    background-color: #000952;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    white-space: nowrap;
+    box-shadow: 2px 2.5px 6.5px 1px rgba(0,0,0,.5);   
+}
+/* Page */
 
-p {
-    font-family: "Roboto" 
+.hero-title h1 {
+    font-size: 4.5rem;
+    margin: 1rem 0;
+}
+.hero-info {
+    max-width: 600px; 
+    margin: 0 auto;
+
+}
+.hero nav ul {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap;   
+    list-style: none; 
+    margin-left: 0; 
+    padding-left: 0; 
+}
+.hero nav ul > li {
+    margin: .5rem; 
+}
+.next-steps-container {
+    display: flex; 
+    flex-direction: column;
+    list-style: none; 
+    margin-left: 0; 
+    padding-left: 0; 
+    max-width: 450px;
+    font-size: 1.5rem;  
+}
+.next-steps-container > div {
+    flex-grow: 0;   
+}
+.newsletter-signup {
+    background: #000952; 
+    color: white; 
+    display: flex; 
+    width: 100%; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    padding: 1rem; 
+    justify-content: center; 
+    z-index: 100;
+}
+.newsletter-signup input[type="text"]{
+    margin-left: .5rem; 
 }
