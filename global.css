@@ -9,6 +9,9 @@ body {
     background-color: rgb(187, 217, 228);
     font-family: "Roboto";
 }
+img {
+    width: 100%; 
+}
 h1 {
     font-family: "Poiret One";
 }
@@ -32,6 +35,32 @@ img.float-left{
 img.float-right{ 
     margin-left: .5rem; 
     margin-bottom: .5rem; 
+}
+.insights img {
+    max-width: 150px;
+}
+.insight {
+    display: flex;
+    margin-bottom: 60px;
+}
+.insight .img-wrapper {
+    padding-right: 30px;
+    flex: 1;
+}
+.insights .content-wrapper {
+    flex: 3;
+}
+.flows {
+    display: flex;
+}
+.flows .img-wrapper {
+    padding: 0 5px;
+}
+.port-imgs {
+    display: flex;
+}
+.port-imgs .img-wrapper {
+    padding: 0 5px;
 }
 /* Components */
 .button {
@@ -62,8 +91,6 @@ img.float-right{
     justify-content: space-between; 
     flex-wrap: wrap;   
     list-style: none; 
-    margin-left: 0; 
-    padding-left: 0; 
 }
 .hero nav ul > li {
     margin: .5rem; 
@@ -92,6 +119,16 @@ img.float-right{
     justify-content: center; 
     z-index: 100;
 }
+.newsletter-signup-content {
+    display: flex;
+    align-items: center;
+}
+.newsletter-signup-content button {
+    background: rgb(187, 217, 228);
+    height: 20px;
+    margin-left: .5rem;  
+}
 .newsletter-signup input[type="text"]{
     margin-left: .5rem; 
+    height: 20px;
 }
